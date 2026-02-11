@@ -46,13 +46,16 @@ export const PromotionArchiveClient = ({
         if (!('children' in node)) return ''
 
         const text =
-          node.children
-            ?.map((child) =>
-              child.type === 'text'
-                ? (child as SerializedTextNode).text
-                : ''
-            )
-            .join('') || ''
+  Array.isArray(node.children)
+    ? node.children
+        .map((child) =>
+          child.type === 'text'
+            ? (child as SerializedTextNode).text
+            : ''
+        )
+        .join('')
+    : ''
+
 
         return text ? `<p>${text}</p>` : ''
       })
