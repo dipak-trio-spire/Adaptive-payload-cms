@@ -95,6 +95,6 @@ export const plugins: Plugin[] = [
       collections: {
         media: true, // Media collection uploads go to Vercel Blob
       },
-      token: process.env.BLOB_READ_WRITE_TOKEN || "vercel_blob_rw_0jT2yZlOsQlgkg6b_pAbqIqAMa1n7meqwpiJxAoXQjb8E39", // Set in Vercel env
+      token: process.env.BLOB_READ_WRITE_TOKEN || "vercel_blob_rw_0CV7tIrjZ9NfXxYP_egHP14l2xtnCFpyR5a8N2t8ngR74IC", // Set in Vercel env
     }),
 ]
