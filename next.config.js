@@ -4,7 +4,7 @@ import { withPayload } from '@payloadcms/next/withPayload'
 const nextConfig = {
   // Your Next.js config here
   images: {
-    domains: ['adaptive-payload-cms.vercel.app'],
+    domains: ['adaptive-payload-cms-three.vercel.app'],
     unoptimized: true,
     formats: ['image/avif', 'image/webp'],
   },

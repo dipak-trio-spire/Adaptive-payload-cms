@@ -21,7 +21,7 @@ const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
 export default buildConfig({
-  serverURL: process.env.NEXT_PUBLIC_SERVER_URL || (process.env.NODE_ENV === 'production' ? 'https://adaptive-payload-cms.vercel.app' : 'http://localhost:3000'),
+  serverURL: process.env.NEXT_PUBLIC_SERVER_URL || (process.env.NODE_ENV === 'production' ? 'https://adaptive-payload-cms-three.vercel.app' : 'http://localhost:3000'),
   admin: {
     meta: {
       titleSuffix: '- Adaptive',
@@ -79,7 +79,7 @@ export default buildConfig({
   }),
   collections: [Pages, Posts, Webinars, Promotion, Media, Categories, Users],
   cors: [
-    'https://adaptive-payload-cms.vercel.app',
+    'https://adaptive-payload-cms-three.vercel.app',
     'http://localhost:3000',
     process.env.NEXT_PUBLIC_SERVER_URL,
   ].filter(Boolean) as string[],
